@@ -9,15 +9,35 @@ by wesley hill (@hakobyte)
 twiimote is a program that **'connects your wiimote to twitter'.**
 it's as simple as that.
 
+Real reason: **I wrote this application because I was bored due to A Level revision & exams :/**
+
+
+Media:
+===============
+asciicast:
+http://ascii.io/a/4572
+
+youtube:
+http://www.youtube.com/watch?v=KMEmvo1dbgg
+
+#Requirements
+
+You're gonna need some stuff in order to get
+twiimote up and running:
+
++ **Bluetooth/adapter**
+
++ **A Nintendo Wiimote RVL-CNT-01**
+
+	+ _The motionplus version of the wiimote (Nintendo RVL-CNT-01-TR) reportedly works through the 'sync' button. But it's not been tested._
+
++ **Linux or a VM.** [Virtualbox]() (for windows and mac users)
+
 
 Install
 ===============
 
-**You'll need a working wiimote to use this!**
-
 twiimote requires ```python-cwiid``` and ```python-bluez``` & obviously ```pip```
-
-
 
     sudo apt-get install python-cwiid python-bluez
 
@@ -29,17 +49,16 @@ then:
 
 **not mac or windows.**
 
-media:
+
+Usage
 ===============
-asciicast:
-http://ascii.io/a/4572
+open a terminal and launch:
 
-youtube:
-http://www.youtube.com/watch?v=KMEmvo1dbgg
+	twiimote 
 
+that's it!
 
-How to use:
-===============
+<br />
 
 When inside twiimote press these buttons to navigate.
                                                                           
@@ -55,8 +74,50 @@ B = Hashtag tracking. - press Home to exit.
 
 Minus = Exit 
 
-Learn More
-===============
 
-for more information on twiimote head over here.
-http://hakob.yt/e/twiimote
+Support
+===============
+if you really want twiimote have more features, or you just appreciate my work please consider a donation.
+
+[paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MUNXZRW3N24Q)
+
+[gittip](http://www.gittip.com/hako)
+
+I would like to add app.net to twiimote but I need a dev account first.
+
+If you like a gold edition of twiimote just get **<a href="http://gum.co/twiimoteau">twiimote Au</a> <script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>**
+
+
+Problem?
+===============
+twiimote not behaving itself?
+
+contact me on [twitter](https://twitter.com/hakobyte) or by [e-mail](hakobyte@gmail.com) here.
+
+or fork this repo and contribute! :D
+
+
+Credits
+===============
+twython by [@ryanmcgrath](https://twitter.com/ryanmcgrath) - _for the awesome twiiter api wrapper in python._
+
+colorama by Jonathan Hartley - _for pwetty twerminal colours._
+
+[Nintendo](https://nintendo.com) - for the wiimote _duh._
+
+
+
+License
+===============
+twiimote is **free** software.
+
+twiimote is licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+=[],
+
+ > _munchi says thanks, for using this software, knowing that you will do **good** with it._	
+
+[http://hakobaito.co.uk](http://hakobaito.co.uk)
+
+
+[http://hakob.yt/e/twiimote](http://hakob.yt/e/twiimote)
