@@ -1,6 +1,7 @@
-===============
-twiimote
-===============
+![](https://pbs.twimg.com/media/BBCxQoPCAAE7gSW.gif)
+
+#twiimote
+
 
 a wiimote to twitter thingy.
 by wesley hill (@hakobyte)
@@ -14,19 +15,19 @@ Install
 
 **You'll need a working wiimote to use this!**
 
-twiimote requires python-cwiid and python-bluez & obviously pip
+twiimote requires ```python-cwiid``` and ```python-bluez``` & obviously ```pip```
 
-::
 
- sudo apt-get install python-cwiid python-bluez
+
+    sudo apt-get install python-cwiid python-bluez
 
 then:
 
-::
+    sudo pip install twiimote
 
- sudo pip install twiimote
+**keep in mind twiimote only works on linux.**
 
-**keep in mind twiimote only works on linux. not mac or windows.**
+**not mac or windows.**
 
 media:
 ===============
