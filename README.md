@@ -9,7 +9,7 @@ by wesley hill (@hakobyte)
 twiimote is a program that **'connects your wiimote to twitter'.**
 it's as simple as that.
 
-Real reason: **I wrote this application because I was bored due to A Level revision & exams :/**
+Real reason: **I wrote this application for fun and because I was bored due to A Level revision & exams :/**
 
 ![](http://www.hakobaito.co.uk/content/twiimote_1376196174_sd.png)
 
