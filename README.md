@@ -40,9 +40,9 @@ twiimote up and running:
 Install
 ===============
 
-twiimote requires ```python-cwiid``` and ```python-bluez``` & obviously ```pip```
+twiimote requires ```python-cwiid``` and ```python-bluez``` ```bluez``` & obviously ```pip```
 
-    sudo apt-get install python-cwiid python-bluez
+    sudo apt-get install python-cwiid python-bluez bluez
 
 then:
 
