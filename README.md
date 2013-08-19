@@ -102,7 +102,7 @@ or fork this repo and contribute! :D
 
 Credits
 ===============
-twython by [@ryanmcgrath](https://twitter.com/ryanmcgrath) - _for the awesome twiiter api wrapper in python._
+twython by [@ryanmcgrath](https://twitter.com/ryanmcgrath) - _for the awesome twitter api wrapper in python._
 
 colorama by Jonathan Hartley - _for pwetty twerminal colours._
 
