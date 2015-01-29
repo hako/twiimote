@@ -32,7 +32,7 @@
 #
 #       __INIT__.PY
 #
-#       Version 1.7
+#       Version 1.7.1
 #
 #       [C] WESLEY HILL 2013
 #
@@ -48,6 +48,7 @@ import colorama
 import cwiid
 import sys
 import os
+import json
 import time
 import twiimotelogo
 import twython
@@ -215,7 +216,7 @@ def main():
         print textcolour.GREEN + colorama.ansi.Style.BRIGHT + "Connected!"
         print colorama.ansi.Style.RESET_ALL
 
-        twiimote.DisplayUser()  # display users twitter handle
+        twiimote.displayUser()  # display users twitter handle
 
         tm.rumble = 1
         time.sleep(.2)
@@ -242,7 +243,7 @@ def main():
 
         print colorama.ansi.Style.RESET_ALL
 
-        print "Menu: \n Home: Home Timeline [beta] \n 1: List @Mentions \n 2. List DM's \n A: Soon...  \n B: Hashtag tracking. \n - : Exit"
+        print "Menu: \n Home: Home Timeline  \n 1: List mentions \n 2. List DM's \n A: Soon...  \n B: Hashtag tracking. \n - : Exit"
 
         tm.led = 15
         time.sleep(.2)
@@ -279,9 +280,11 @@ def main():
                 CKS_USR = base64.b64decode(twiimotesession.C_SECRET)
 
                 saved_tkns = open(twiimotesession.app_settings, "rb")
-                foa_tk = saved_tkns.readline().rstrip()
-                foa_tks = saved_tkns.readline().rstrip()
-                saved_tkns.close
+                config = json.load(saved_tkns)
+                saved_tkns.close()
+                
+                foa_tk = config[0]
+                foa_tks = config[1]
 
                 twmt = Home(CK_USR, CKS_USR, foa_tk, foa_tks, timeout=300)
 
@@ -337,9 +340,11 @@ def main():
             CKS_USR = base64.b64decode(twiimotesession.C_SECRET)
 
             saved_tkns = open(twiimotesession.app_settings, "rb")
-            foa_tk = saved_tkns.readline().rstrip()
-            foa_tks = saved_tkns.readline().rstrip()
-            saved_tkns.close
+            config = json.load(saved_tkns)
+            saved_tkns.close()
+                
+            foa_tk = config[0]
+            foa_tks = config[1]
 
             try:
                 tm.led = 0
@@ -413,11 +418,12 @@ def main():
 
             CK_USR = base64.b64decode(twiimotesession.C_KEY)
             CKS_USR = base64.b64decode(twiimotesession.C_SECRET)
-
             saved_tkns = open(twiimotesession.app_settings, "rb")
-            foa_tk = saved_tkns.readline().rstrip()
-            foa_tks = saved_tkns.readline().rstrip()
-            saved_tkns.close
+            config = json.load(saved_tkns)
+            saved_tkns.close()
+                
+            foa_tk = config[0]
+            foa_tks = config[1]
 
             twmt = twython.api.Twython(CK_USR, CKS_USR, foa_tk, foa_tks)
 
@@ -457,9 +463,11 @@ def main():
             CKS_USR = base64.b64decode(twiimotesession.C_SECRET)
 
             saved_tkns = open(twiimotesession.app_settings, "rb")
-            foa_tk = saved_tkns.readline().rstrip()
-            foa_tks = saved_tkns.readline().rstrip()
-            saved_tkns.close
+            config = json.load(saved_tkns)
+            saved_tkns.close()
+                
+            foa_tk = config[0]
+            foa_tks = config[1]
 
             twmt = twython.api.Twython(CK_USR, CKS_USR, foa_tk, foa_tks)
 
