@@ -418,7 +418,7 @@ def main():
 
             CK_USR = base64.b64decode(twiimotesession.C_KEY)
             CKS_USR = base64.b64decode(twiimotesession.C_SECRET)
-
+            saved_tkns = open(twiimotesession.app_settings, "rb")
             config = json.load(saved_tkns)
             saved_tkns.close()
                 
