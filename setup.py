@@ -8,7 +8,7 @@ from setuptools import setup
 #you need python-cwiid & python-bluetooth.
 
 setup(name='twiimote',
-      version='1.7',
+      version='1.7.1',
       packages=['twiimote',],
       include_package_data=True,
       description='a wiimote to twitter thingy.',
