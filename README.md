@@ -18,7 +18,7 @@ Real reason: **I wrote this application for fun and because I was bored due to A
 Media:
 ===============
 asciicast:
-http://ascii.io/a/4572
+https://asciinema.org/a/4572
 
 youtube:
 http://www.youtube.com/watch?v=KMEmvo1dbgg
