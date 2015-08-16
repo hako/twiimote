@@ -4,12 +4,12 @@
 
 
 a wiimote to twitter thingy.
-by wesley hill (@hakobyte)
+by Wesley Hill (@hakobyte)
 
-twiimote is a program that **'connects your wiimote to twitter'.**
+twiimote is a small toy program that **'connects your wiimote to twitter'.**
 it's as simple as that.
 
-Real reason: **I wrote this application for fun and because I was bored due to A Level revision & exams :/**
+Real reason: **I wrote this application just for fun because I was bored due to A Level revision/exams :/**
 
 ![](http://www.hakobaito.co.uk/content/twiimote_1376196174_sd.png)
 
@@ -34,7 +34,7 @@ twiimote up and running:
 
 	+ _The motionplus version of the wiimote (Nintendo RVL-CNT-01-TR) reportedly works through the 'sync' button. But it's not been tested._
 
-+ **Linux or a VM.** [Virtualbox]() (for windows and mac users)
++ **Linux or a VM.** [Virtualbox](https://www.virtualbox.org) (for windows and mac users)
 
 
 Install
@@ -48,10 +48,9 @@ then:
 
     sudo pip install twiimote
 
-**keep in mind twiimote only works on linux.**
+**keep in mind twiimote only works on GNU/Linux.**
 
 **not mac or windows.**
-
 
 Usage
 ===============
@@ -77,20 +76,6 @@ B = Hashtag tracking. - press Home to exit.
 
 Minus = Exit 
 
-
-Support
-===============
-if you really want twiimote have more features, or you just appreciate my work please consider a donation.
-
-[paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MUNXZRW3N24Q)
-
-[gittip](http://www.gittip.com/hako)
-
-I would like to add app.net to twiimote but I need a dev account first.
-
-If you like a gold edition of twiimote just get **<a href="http://gum.co/twiimoteau">twiimote Au</a> <script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>**
-
-
 Problem?
 ===============
 twiimote not behaving itself?
@@ -104,10 +89,9 @@ Credits
 ===============
 twython by [@ryanmcgrath](https://twitter.com/ryanmcgrath) - _for the awesome twitter api wrapper in python._
 
-colorama by Jonathan Hartley - _for pwetty twerminal colours._
+colorama by Jonathan Hartley - _for pwetty terminal colours._
 
 [Nintendo](https://nintendo.com) - for the wiimote _duh._
-
 
 
 License
